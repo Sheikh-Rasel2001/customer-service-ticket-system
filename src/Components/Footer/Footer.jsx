@@ -63,7 +63,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div>
-                    <p className='flex items-center justify-center py-4'><FaRegCopyright /> {new Date().getFullYear()} CS — Ticket System. All rights reserved.</p>
+                    <p className='flex items-center justify-center py-4 text-xs lg:text-lg'><FaRegCopyright /> {new Date().getFullYear()} CS — Ticket System. All rights reserved.</p>
                 </div>
             </div>
 

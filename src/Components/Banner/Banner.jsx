@@ -3,7 +3,7 @@ import './banner.css'
 
 const Banner = () => {
     return (
-        <div className='max-w-7xl mx-auto'>
+        <div className='max-w-7xl mx-auto mb-10'>
             <div className='grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-6 md:px-6 lg:px-0 px-6 mb-8'>
                 {/* progress card */}
                 <div className='rounded-xl py-12 progress-card'>

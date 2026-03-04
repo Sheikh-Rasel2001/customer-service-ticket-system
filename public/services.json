@@ -1,0 +1,152 @@
+[
+  {
+    "id": 1,
+    "ticketCode": "#TC201",
+    "title": "Login Issue",
+    "description": "Customer cannot log in to the platform using correct credentials.",
+    "customer": "John Doe",
+    "priority": "High priority",
+    "status": "Open",
+    "createdAt": "01/03/2026"
+  },
+  {
+    "id": 2,
+    "ticketCode": "#TC202",
+    "title": "Payment Failed",
+    "description": "Payment failed while checking out with credit card.",
+    "customer": "Alice Smith",
+    "priority": "Critical priority",
+    "status": "In Progress",
+    "createdAt": "01/03/2026"
+  },
+  {
+    "id": 3,
+    "ticketCode": "#TC203",
+    "title": "Unable to Update Profile",
+    "description": "Profile information does not save after editing.",
+    "customer": "Bob Johnson",
+    "priority": "Medium priority",
+    "status": "Open",
+    "createdAt": "01/03/2026"
+  },
+  {
+    "id": 4,
+    "ticketCode": "#TC204",
+    "title": "Feature Request: Dark Mode",
+    "description": "Customer requests a dark mode option for the platform.",
+    "customer": "Emily Davis",
+    "priority": "Low priority",
+    "status": "Open",
+    "createdAt": "01/03/2026"
+  },
+  {
+    "id": 5,
+    "ticketCode": "#TC205",
+    "title": "Bug in Report Generation",
+    "description": "Generated reports show incorrect data for last month.",
+    "customer": "Michael Brown",
+    "priority": "High priority",
+    "status": "In Progress",
+    "createdAt": "01/03/2026"
+  },
+  {
+    "id": 6,
+    "ticketCode": "#TC206",
+    "title": "Account Suspension",
+    "description": "Customer's account was suspended without notice.",
+    "customer": "Sarah Wilson",
+    "priority": "Critical priority",
+    "status": "Open",
+    "createdAt": "01/03/2026"
+  },
+  {
+    "id": 7,
+    "ticketCode": "#TC207",
+    "title": "Password Reset Not Working",
+    "description": "Password reset link expired before customer could use it.",
+    "customer": "David Lee",
+    "priority": "High priority",
+    "status": "Resolved",
+    "createdAt": "01/03/2026"
+  },
+  {
+    "id": 8,
+    "ticketCode": "#TC208",
+    "title": "Email Notifications Delay",
+    "description": "Customer receives email notifications after several hours.",
+    "customer": "Olivia Martinez",
+    "priority": "Medium priority",
+    "status": "Open",
+    "createdAt": "01/03/2026"
+  },
+  {
+    "id": 9,
+    "ticketCode": "#TC209",
+    "title": "App Crash on Startup",
+    "description": "Mobile app crashes immediately after opening.",
+    "customer": "James Taylor",
+    "priority": "Critical priority",
+    "status": "In Progress",
+    "createdAt": "01/03/2026"
+  },
+  {
+    "id": 10,
+    "ticketCode": "#TC210",
+    "title": "Incorrect Billing Amount",
+    "description": "Customer charged double for last month's subscription.",
+    "customer": "Sophia Anderson",
+    "priority": "High priority",
+    "status": "Resolved",
+    "createdAt": "01/03/2026"
+  },
+  {
+    "id": 11,
+    "ticketCode": "#TC211",
+    "title": "Two-Factor Authentication Issue",
+    "description": "Customer cannot receive 2FA code via SMS.",
+    "customer": "Liam Thomas",
+    "priority": "Medium priority",
+    "status": "Open",
+    "createdAt": "01/03/2026"
+  },
+  {
+    "id": 12,
+    "ticketCode": "#TC212",
+    "title": "Slow Page Load",
+    "description": "Dashboard pages take more than 15 seconds to load.",
+    "customer": "Ava White",
+    "priority": "Low priority",
+    "status": "Open",
+    "createdAt": "01/03/2026"
+  },
+  {
+    "id": 13,
+    "ticketCode": "#TC213",
+    "title": "Unable to Download Invoice",
+    "description": "Download button for invoices is not responsive.",
+    "customer": "Noah Harris",
+    "priority": "Medium priority",
+    "status": "In Progress",
+    "createdAt": "01/03/2026"
+  },
+  {
+    "id": 14,
+    "ticketCode": "#TC214",
+    "title": "Chat Support Not Responding",
+    "description": "Customer cannot get response via live chat support.",
+    "customer": "Mia Clark",
+    "priority": "High priority",
+    "status": "Open",
+    "createdAt": "01/03/2026"
+  },
+  {
+    "id": 15,
+    "ticketCode": "#TC215",
+    "title": "UI Overlaps on Mobile",
+    "description": "Buttons overlap on mobile devices in profile section.",
+    "customer": "Ethan Lewis",
+    "priority": "Medium priority",
+    "status": "Open",
+    "createdAt": "01/03/2026"
+  }
+]

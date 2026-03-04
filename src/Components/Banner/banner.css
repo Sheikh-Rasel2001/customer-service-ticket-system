@@ -1,0 +1,12 @@
+.progress-card {
+    background-image:
+     url('https://i.ibb.co.com/0R6QPnKw/vector1.png'),
+    linear-gradient(to right, rgb(101, 48, 228, 0.8), rgba(147,51,234,0.7));
+    color: white;
+}
+.resolved-card {
+    background-image: 
+    url('https://i.ibb.co/0R6QPnKw/vector1.png'),
+    linear-gradient(to right, rgba(84,207,104, 0.7), rgb(0, 130, 122, 0.8));
+    color: white;
+}

@@ -5,7 +5,7 @@ import { ImCross } from 'react-icons/im';
 const Nav = () => {
     const [toggleMenu, setToggleMenu] = useState(false);
     return (
-        <div className="w-full bg-white shadow-lg relative">
+        <div className="w-full bg-white shadow-lg sticky top-0 left-0 z-50">
             <nav className='max-w-7xl mx-auto py-4 flex items-center justify-between md:px-6 lg:px-0 px-6 mb-8'>
                 {/* logo */}
                 <div>

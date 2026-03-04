@@ -1,5 +1,6 @@
 import React, { Suspense, use } from 'react';
 import Service from '../Service/Service';
+import Task from '../TaskStatus/Task';
 
 const Services = ({servicesPromise}) => {
     const services = use(servicesPromise);
@@ -19,8 +20,8 @@ const Services = ({servicesPromise}) => {
                 </div>
                 </div>
                 {/* status check section */}
-                <div className='border h-64'>
-
+                <div className=''>
+                    <Task></Task>
                 </div>
             </div>
         </div>

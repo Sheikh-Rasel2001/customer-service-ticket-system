@@ -2,11 +2,11 @@ import React from 'react';
 import { CiCalendar } from 'react-icons/ci';
 import { GoDotFill } from 'react-icons/go';
 
-const Service = ({service}) => {
+const Service = ({service, handleSelectTickets}) => {
     const {title, description, customer, priority, status, createdAt, ticketCode} = service
     return (
         <div>
-        <div className='rounded-xl px-2 py-3 space-y-2 bg-white shadow-md h-28'>
+        <div onClick={() => handleSelectTickets(service)} className='rounded-xl px-2 py-3 space-y-2 bg-white shadow-md h-32 cursor-pointer'>
             <div className='flex justify-between items-center '>
                 <h1 className='lg:text-lg text-sm font-semibold'>{title}</h1>
                 <button className={`
@@ -19,7 +19,7 @@ const Service = ({service}) => {
             </div>
             <p title={description} className='lg:text-lg text-sm block w-64 cursor-pointer truncate'>{description}</p>
             <div className='flex justify-between items-center font-semibold'>
-                <div className='flex gap-1 items-center'>
+                <div className='flex gap-1 lg:gap-2 items-center'>
                     <span className=' text-gray-600 text-xs lg:text-sm'>{ticketCode}</span>
 
                     <span className={`${
@@ -28,7 +28,7 @@ const Service = ({service}) => {
                         : 'text-green-500 text-xs lg:text-sm'
                     }`}>{priority}</span>
                 </div>
-                <div className='flex gap-1 items-center'>
+                <div className='flex gap-1 lg:gap-2 items-center'>
                     <p className='text-blue-800 text-xs lg:text-sm'>{customer}</p>
                     <span className='flex items-center'><CiCalendar className='text-xl font-bold'/>{createdAt}</span>
                 </div>

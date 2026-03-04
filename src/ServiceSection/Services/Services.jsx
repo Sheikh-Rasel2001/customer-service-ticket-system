@@ -2,7 +2,7 @@ import React, { Suspense, use } from 'react';
 import Service from '../Service/Service';
 import Task from '../TaskStatus/Task';
 
-const Services = ({servicesPromise}) => {
+const Services = ({servicesPromise, handleSelectTickets, selectTickets}) => {
     const services = use(servicesPromise);
     // console.log(services);
     return (
@@ -15,14 +15,17 @@ const Services = ({servicesPromise}) => {
                 <div className='grid grid-cols-1 lg:grid lg:grid-cols-2 gap-6 '>
                     <Suspense fallback={<span className="loading loading-infinity loading-xl"></span>}>
                         {
-                            services.map(service => <Service key={service.id} service={service}></Service>)
+                            services.map(service => <Service key={service.id} service={service}
+                            
+                            handleSelectTickets={handleSelectTickets}
+                            ></Service>)
                         }
                     </Suspense>
                 </div>
                 </div>
                 {/* status check section */}
                 <div className=''>
-                    <Task></Task>
+                    <Task selectTickets={selectTickets}></Task>
                 </div>
             </div>
         </div>

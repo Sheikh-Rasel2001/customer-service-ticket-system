@@ -16,7 +16,7 @@ const servicesPromise = fetchServices();
 function App() {
   const [selectTickets, setSelectTickets] = useState([]);
   const [complete, setComplete] = useState([]);
-
+// Select ticket for task 
   const handleSelectTickets = (service) => {
     const exists = selectTickets.find(item => item.id === service.id);
     if(exists) {
@@ -29,7 +29,7 @@ function App() {
     setSelectTickets(newTicket);
     toast('Customer Ticket Item Added');
   }
-
+// complete the task
   const handleComplete = (id) => {
       // console.log('complete ticket', id);
       const newComplete = selectTickets.find(ticket => ticket.id === id);

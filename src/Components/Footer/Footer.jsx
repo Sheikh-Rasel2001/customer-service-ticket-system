@@ -51,13 +51,13 @@ const Footer = () => {
                             <h1 className='text-xl text-gray-200 font-bold'>Social Links</h1>
                             <ul className='text-gray-400 space-y-3'>
                                 {/* twitter */}
-                                <li className='hover:text-gray-50'><a href="#" className='flex gap-2 items-center'><FaXTwitter className='w-6 h-6 text-lg rounded-full bg-gray-500 text-black hover:bg-gray-200' />@CS-Ticket System</a></li>
+                                <li className='hover:text-gray-50'><a href="#" className='flex gap-2 items-center text-xs lg:text-lg'><FaXTwitter className='w-6 h-6 text-lg rounded-full bg-gray-500 text-black hover:bg-gray-200' />@CS-Ticket System</a></li>
                                 {/* facebook */}
-                                <li className='hover:text-gray-50'><a href="#" className='flex gap-2 items-center'><FaFacebookF className='w-6 h-6 text-lg rounded-full bg-gray-500 text-black hover:bg-gray-200' />@CS-Ticket System</a></li>
-                                {/* LinkdIn */}
-                                <li className='hover:text-gray-50'><a href="#" className='flex gap-2 items-center'><FaLinkedin className='w-6 h-6 text-lg rounded-full bg-gray-500 text-black hover:bg-gray-200' />@CS-Ticket System</a></li>
+                                <li className='hover:text-gray-50'><a href="#" className='flex gap-2 items-center text-xs lg:text-lg'><FaFacebookF className='w-6 h-6 text-lg rounded-full bg-gray-500 text-black hover:bg-gray-200' />@CS-Ticket System</a></li>
+                                {/* LinkedIn */}
+                                <li className='hover:text-gray-50'><a href="#" className='flex gap-2 items-center text-xs lg:text-lg'><FaLinkedin className='w-6 h-6 text-lg rounded-full bg-gray-500 text-black hover:bg-gray-200' />@CS-Ticket System</a></li>
                                 {/* gmail */}
-                                <li className='hover:text-gray-50'><a href="#" className='flex gap-2 items-center'><CgMail className='w-6 h-6 text-lg rounded-full bg-gray-500 text-black hover:bg-gray-200' />@ support@cst.com</a></li>
+                                <li className='hover:text-gray-50'><a href="#" className='flex gap-2 items-center text-xs lg:text-lg'><CgMail className='w-6 h-6 text-lg rounded-full bg-gray-500 text-black hover:bg-gray-200' />@ support@cst.com</a></li>
                             </ul>
                         </div>
                     </div>

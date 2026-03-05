@@ -2,7 +2,7 @@ import React, { Suspense, use } from 'react';
 import Service from '../Service/Service';
 import Task from '../TaskStatus/Task';
 
-const Services = ({servicesPromise, handleSelectTickets, selectTickets}) => {
+const Services = ({servicesPromise, handleSelectTickets, selectTickets, handleComplete, complete}) => {
     const services = use(servicesPromise);
     // console.log(services);
     return (
@@ -25,7 +25,11 @@ const Services = ({servicesPromise, handleSelectTickets, selectTickets}) => {
                 </div>
                 {/* status check section */}
                 <div className=''>
-                    <Task selectTickets={selectTickets}></Task>
+                    <Task 
+                    selectTickets={selectTickets}
+                    handleComplete={handleComplete} 
+                    complete={complete}
+                    ></Task>
                 </div>
             </div>
         </div>

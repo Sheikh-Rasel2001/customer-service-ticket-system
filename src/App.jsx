@@ -15,32 +15,39 @@ const servicesPromise = fetchServices();
 
 function App() {
   const [selectTickets, setSelectTickets] = useState([]);
-  const [complete, setComplete] = useState([])
+  const [complete, setComplete] = useState([]);
 
   const handleSelectTickets = (service) => {
+    const exists = selectTickets.find(item => item.id === service.id);
+    if(exists) {
+      toast('Already Added The Ticket ⚠️');
+      return
+    }
     // console.log('ticket item add');
-    const newTicket = [...selectTickets, service]
+    const newTicket = [...selectTickets, service];
     // console.log(newTicket);
-    setSelectTickets(newTicket)
-    toast('Customer Ticket Item Added')
+    setSelectTickets(newTicket);
+    toast('Customer Ticket Item Added');
   }
 
   const handleComplete = (id) => {
       // console.log('complete ticket', id);
       const newComplete = selectTickets.find(ticket => ticket.id === id);
+      if (!newComplete) return;
       // console.log(newComplete);
-      const resolveDone = [...complete, newComplete]
-      setComplete(resolveDone)
+      const resolveDone = [...complete, newComplete];
+      setComplete(resolveDone);
       
-      const remove = selectTickets.filter(ticket => ticket.id !== id)
-      setSelectTickets(remove)
+      const remove = selectTickets.filter(ticket => ticket.id !== id);
+      setSelectTickets(remove);
+      toast("Task Completed Successfully ✅");
   }
 
   return (
     <>
       <div className='mx-auto min-h-screen bg-gray-100'>
         <Nav></Nav>
-        <Banner selectTickets={selectTickets}></Banner>
+        <Banner selectTickets={selectTickets} complete={complete}></Banner>
         <Services
           servicesPromise={servicesPromise}
           selectTickets={selectTickets}

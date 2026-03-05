@@ -3,8 +3,9 @@ import Service from '../Service/Service';
 import Task from '../TaskStatus/Task';
 
 const Services = ({servicesPromise, handleSelectTickets, selectTickets, handleComplete, complete}) => {
-    const services = use(servicesPromise);
+    const allServices = use(servicesPromise);
     // console.log(services);
+    const services = allServices.filter(service => !complete.find(item => item.id === service.id))
     return (
         <div className='max-w-7xl mx-auto mb-10'>
             

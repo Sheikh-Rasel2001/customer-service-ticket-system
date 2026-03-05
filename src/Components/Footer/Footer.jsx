@@ -5,7 +5,7 @@ import { FaFacebookF, FaLinkedin, FaRegCopyright, FaXTwitter } from 'react-icons
 const Footer = () => {
     return (
         <div className='w-full bg-black'>
-            <div className='max--w-7xl mx-auto px-6 pt-8 text-gray-50'>
+            <div className='max-w-7xl mx-auto px-6 pt-8 text-gray-50'>
                 {/* parent */}
                 <div className='grid grid-cols-1 lg:grid lg:grid-cols-3 gap-4 border-b border-gray-400 pb-5'>
                     {/* cs title */}

@@ -1,16 +1,19 @@
-# React + Vite
+1. Q: What is JSX, and why is it used?
+Ans: JSX হলো javasript এর syntax extension যা React এ HTML এর মত syntax ব্যবহার করে UI তৈরী করতে সাহায্য করে ।  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+2. Q: What is the difference between State and Props?
+Ans: State হলো component এর ভিতরে তৈরী করা একটি object যা data ধারন করে । এটি যে component এ তৈরী করা হয় তার নিয়ন্ত্রণে থাকে । data পরিবর্তন বা আপডেট করা যায় । 
+আর props হলো ফাংশনের argument যা parent থেকে child এ পাঠানো হয় । এটির নিয়ন্ত্রণ নিজের কাছে থাকে না, পরিবর্তন করা যায় না, শুধু ডাটা পাস করা হয় ।
 
-Currently, two official plugins are available:
+3. Q: What is the useState hook, and how does it work?
+Ans: useState hook হলো react hook যা functional component এর ভিতরে থাকা state manage করে পরিবর্তন করতে পারে । এটি initial data মনে রাখতে পারে এবং যখন পরিবর্তনের প্রয়োজন তখন সেটি পরিবর্তন করতে পারে । 
+যেমন : 
+const [data, setData] = useState(10) --> এখানে initial value is 10 
+const handleData = () => {
+setData ( data * 5) --> এখানে setData data এর value আপডেট করতেছে 
+}
+4. Q: How can you share state between components in React?
+   Ans: Lifting state up ব্যবহার করবো ।
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+5. Q: How is event handling done in React?
+   Ans: React এ event handling করার জন্য event handler function ব্যবহার করা হয় । event গুলি camelCase এ লিখে JSX ফাংশনে পাঠানো হয় । 
